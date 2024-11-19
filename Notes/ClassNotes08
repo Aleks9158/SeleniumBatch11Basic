@@ -1,0 +1,64 @@
+Selenium Class 8
+
+Implicit wait:
+will be applied for findElement method
+
+Explicit wait or WebDriver Wait:
+is used to tell the webdriver to wait for a certain condition
+before throwing an exception for a specified condition
+используется, чтобы указать веб-драйверу ждать определенного условия
+перед генерацией исключения для указанного условия
+
+Explicit wait works with ExpectedConditions class and
+waits until certain conditions are met or the given time is achieved
+Явное ожидание работает с классом ExpectedConditions и
+ждет, пока не будут выполнены определенные условия или не будет достигнуто заданное время
+
+* sign in xpath is a wild card which can identify any tagname
+sign in xpath — это подстановочный знак, который может идентифицировать любой тэг
+//*[contains(text(), 'Welcome')]
+
+Fluent Wait --> global wait
+it is used to tell the webdriver to wait for certain condition as well as its frequency
+before throwing an exception
+он используется, чтобы указать веб-драйверу ждать определенного условия, а также его частоты
+перед генерацией исключения
+
+Implicit wait -- waits to locate the element
+Explicit wait -- waits until certain condition
+Fluent wait -- sets timeouts, polling time and ignores needed exceptions in the given time period
+               устанавливает тайм-ауты, время опроса и игнорирует необходимые исключения в заданный период времени
+
+WebTables:
+Webtables are elements on the webpage, which are constructed by having rows and columns
+
+Types of WebTables:
+1. Static webtable
+2. Dynamic webtable
+
+WebTables consist of different sections or parts
+<table>
+    <thead>
+            <tr>
+                <th></th> -- column data or heading
+            </tr>
+    </thead>
+    <tbody>
+            <tr>
+                <td></td> -- table data
+            </tr>
+    </tbody>
+</table>
+
+HW
+
+go to https://the-internet.herokuapp.com/dynamic_controls
+click on checkbox and click on remove
+verify the text
+click on enable verify the textbox is enabled
+enter text and click disable
+verify the textbox is disabled
+
+create a package and name it as utils
+create a class and name as CommonMethods
+create functions (methods) to open and close the browsers
